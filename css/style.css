@@ -1,0 +1,592 @@
+@charset "UTF-8";
+
+body {
+  background-color: #F5EAD8;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.section-title {
+  padding: 40px 0;
+  font-size: 24px;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+
+/* header------------------------------------------ */
+.pc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.logo {
+  width: 80px;
+  z-index: 20;
+}
+
+.jump {
+  display: flex;
+  align-items: center;
+}
+
+.jump li {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 18px;
+  padding: 0 40px;
+  border-right: 1px solid black;
+}
+
+.jump li:last-child {
+  border-right: none
+}
+
+.hamburger {
+  display: none;
+}
+
+.info {
+  display: none;
+}
+
+
+/* mainvisual---------------------------------- */
+.mainvisual img {
+  width: 100%;
+  height: calc(100vh - 72px);
+}
+
+/* about------------------------------------- */
+.about {
+  padding: 80px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about .section-title {
+  padding-top: 80px;
+}
+
+.about-inner {
+  text-align: center;
+  width: 50%;
+}
+
+.about-inner .section-title {
+  text-align: center;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text p {
+  padding-bottom: 20px;
+}
+
+.photos {
+  width: 50%;
+  position: relative;
+}
+
+.photos .small-photo {
+  position: absolute;
+  left: 70%;
+  top: 70%;
+  transform: translateX(-70%);
+}
+
+
+/* concept----------------------------------- */
+.concept {
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  padding-top: 80px;
+}
+
+.concept-inner {
+  text-align: center;
+  width: 50%;
+}
+
+.concept-text p {
+  padding-bottom: 20px;
+}
+
+.concept-photo {
+  text-align: center;
+  width: 50%;
+}
+
+
+/* menu--------------------------------------- */
+.menu {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.menu .section-title {
+  text-align: center;
+  padding-bottom: 54px;
+}
+
+.slick-items {
+  display: flex;
+}
+
+.slick-items li {
+  padding: 0 24px;
+}
+
+.slick-slide {
+  transform: scale(0.8);
+  transition: all 0.5s;
+}
+
+.is-active {
+  transform: scale(1);
+}
+
+.slick-items li img {
+  width: 100%;
+
+}
+
+.slick-items p {
+  text-align: center;
+  padding-top: 14px;
+}
+
+
+
+
+
+/* news_________________________________________ */
+.news {
+  padding: 40px 0;
+  background: #F4DCB5;
+}
+
+.news .section-title {
+  text-align: center;
+}
+
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
+.news .date {
+  width: 30%;
+  border-bottom: 1px solid;
+  padding-top: 26px;
+  padding-left: 20px;
+
+}
+
+.news .text {
+  width: 70%;
+  border-bottom: 1px solid;
+  padding-top: 26px;
+}
+
+
+.btn {
+  font-size: 18px;
+}
+
+.btn a {
+  display: inline-block;
+  width: 250px;
+  padding: 15px 0;
+  border: 1px solid;
+  border-radius: 50px
+}
+
+.btn a:hover {
+  transition: all 0.5s;
+  opacity: 0.8;
+  background-color: #F4BF69;
+  border: 1px solid #AE6F1C;
+}
+.news .btn {
+  text-align: center;
+  padding: 40px 0;
+}
+
+
+/* contact--------------------------------------- */
+.contact {
+  padding: 40px 0 80px;
+}
+
+.contact .section-title {
+  text-align: center;
+}
+
+.contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding-top: 40px;
+}
+
+.contact dt {
+  width: 25%;
+  margin-bottom: 22px;
+}
+
+.contact dd {
+  width: 75%;
+  margin-bottom: 22px;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+
+input {
+  width: 100%;
+  height: 44px;
+}
+
+.contact dd textarea {
+  height: 160px;
+  width: 100%;
+
+}
+
+.btn {
+  display: block;
+  text-align: center;
+}
+
+.btn input {
+  width: 250px;
+  height: 66px;
+  margin: 40px 0;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.btn input:hover {
+  transition: all 0.5s;
+  opacity: 0.8;
+  background-color: #F4BF69;
+  border: 1px solid #AE6F1C;
+}
+
+
+/* store--------------------------------------- */
+.store {
+  padding-bottom: 80px;
+}
+
+.store .section-title {
+  text-align: center;
+}
+
+.store .store-info {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.store .shop-guide {
+  padding-right: 140px;
+}
+
+.store .shop-guide p {
+  font-size: 16px;
+  color: #F5EAD8;
+  padding-bottom: 16px;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 */
+}
+
+.map iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* footer----------------------------- */
+footer {
+  background: #D7B78D;
+}
+
+footer ul {
+  padding-top: 24px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  padding: 0 60px;
+  border-right: 1px solid;
+}
+
+footer ul li:last-child {
+  border-right: none;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
+  padding: 24px 0;
+}
+
+
+
+/* ---responsive-------------------------------- */
+@media(max-width: 1000px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .jump {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    padding-right: auto;
+    /* border: 1px solid red; */
+    width: 40px;
+    height: 40px;
+    line-height: 80px;
+    margin-right: 3%;
+    position: relative;
+    z-index: 20;
+  }
+
+  .hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #121212;
+    margin-right: 3%;
+    transition: all 0.6s;
+  }
+
+  .hamburger p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 25%;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 50%;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 75%;
+  }
+
+  .open .hamburger span:nth-child(1) {
+    top: 50%;
+    transform: rotate(225deg);
+  }
+
+  .open .hamburger span:nth-child(2) {
+    display: none;
+  }
+
+  .open .hamburger span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-225deg);
+  }
+
+  .info {
+    display: block;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background: rgba(215, 183, 141, 0.8);
+    transition: all 0.7s;
+    opacity: 0;
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .open .info {
+    right: 0;
+    opacity: 1;
+  }
+
+  .info .nav-menu,
+  .info .sns {
+    padding-left: 50px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 18px;
+    padding-top: 80px;
+  }
+
+  .info .nav-menu li,
+  .info .sns li {
+    padding-bottom: 16px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  .about-inner {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  .photos {
+    width: 100%;
+    text-align: center;
+  }
+
+  .photos .small-photo {
+    top: 70%;
+  }
+
+  .news dl {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding: 40px 0;
+}
+
+.news .date {
+  width: 100%;
+  border-bottom: none;
+  padding-top: 16px;
+  padding-left: 0;
+}
+
+.news .text {
+  width: 100%;
+  border-bottom: 1px solid;
+  padding: 8px 0;
+}
+
+.btn a {
+  width: 100%;
+}
+
+  .concept {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  .concept-inner {
+    width: 100%;
+  }
+
+  .concept-photo {
+    width: 100%;
+  }
+
+  .contact dl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact dl dt {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 8px;
+  }
+
+  .contact dl dd {
+    width: 100%;
+  }
+
+   .btn input {
+    width: 100%;
+  }
+
+  .store {
+    margin: 0 auto;
+  }
+
+  .store .store-info {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store .shop-guide {
+  padding-right: 0;
+}
+
+  .footer-item .sns li {
+    padding: 0;
+  }
+
+  .footer-item .sns {
+    gap: 26px;
+  }
+
+
+
+
+
+
+}
+
+
+
